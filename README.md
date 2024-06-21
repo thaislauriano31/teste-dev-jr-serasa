@@ -21,17 +21,35 @@ Para executar o código, siga os seguintes passos:
     cd teste-dev-jr-serasa/code
 ```
 
-4. Execute o comando a seguir para instalar as bibliotecas necessárias
+4. Se quiser utilizar um ambiente virtual para executar o código, basta executar
+```bash
+    python -m venv c:\path\to\your-env
+```
+e depois ativar o ambiente, executando
+```bash
+    your-env/Scripts/activate.bat
+```
+se estiver em um terminal cmd, ou
+```bash
+    your-env/Scripts/Activate.ps1
+```
+se estiver em um terminal powershell, ou 
+```bash
+    source your-env/Scripts/activate
+```
+se estiver usando um sistema operacional Linux ou MacOS.
+
+5. Execute o comando a seguir para instalar as bibliotecas necessárias
 ```bash
     pip install -r requirements.txt no terminal
 ```
 
-5. Execute o código com o comando 
+6. Execute o código com o comando 
 ```bash
-py main.py 
+    py main.py 
 ```
 (no lugar do comando acima, pode ser que precise digitar ***python main.py*** ou ***python3 main.py***, a depender das configurações do Python na sua máquina). Se estiver com o código aberto no VScode, apertar o botão de play no canto superior direito da janela também deve funcionar.
 
-6. Uma mensagem aparecerá no terminal perguntando qual região deseja usar como filtro, digite o nome da região desejada como aparece nas opções do site.
+7. Uma mensagem aparecerá no terminal perguntando qual região deseja usar como filtro, digite o nome da região desejada como aparece nas opções do site.
 
-7. Assim que a execução for finaliada, verifique se o arquivo csv com as informações das ações da região escolhida foi criado na pasta ***stock_files***.
+8. Assim que a execução for finaliada, verifique se o arquivo csv com as informações das ações da região escolhida foi criado na pasta ***stock_files***.

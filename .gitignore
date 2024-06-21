@@ -1,4 +1,4 @@
-/my-venv/*
+code/my-venv/*
 /__pycache__/*
 
 /stock_files/*
