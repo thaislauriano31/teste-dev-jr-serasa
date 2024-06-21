@@ -1,10 +1,12 @@
 
 from yahoo_finance import YahooFinance
 
-def main(region: str):
-    
+def main():
+    region = input(
+        "Qual região você deseja usar como filtro?\n(Escreva o nome como está no site)\n"
+        ).strip().title()
     yahoo_finance = YahooFinance("https://finance.yahoo.com/screener/new")
-    yahoo_finance.filter_by_region(region)
+    yahoo_finance.get_stocks(region)
 
 if __name__ == '__main__':
-    main("Brazil")
+    main()
